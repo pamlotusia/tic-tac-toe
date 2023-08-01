@@ -7,6 +7,8 @@ let messageContainer = document.querySelector('#message')
 let messageText = document.querySelector('#message p')
 let messageIcon = document.querySelector('#message-icon')
 
+
+
 let positions = [
   [1, 2, 3],
   [4, 5, 6],

@@ -3,17 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jogo da velha versão final</title>
+    <title>Jogo da velha</title>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <h1> 🌸 JOGO DA VELHA 🌸</h1>
-      <hr>
+      <h1>🌸 JOGO DA VELHA 🌸</h1>
+      <hr />
 
       <div class="player">
         <h2 class="currentPlayer"></h2>
-        <img src=".\images\hello-kitty-icon.png" alt="" id="icon-player" width="70" height="50">
+        <img
+          src=".\images\hello-kitty-icon.png"
+          alt=""
+          id="icon-player"
+          width="70"
+          height="50"
+        />
       </div>
 
       <div class="board">
@@ -32,19 +43,21 @@
       <h2>Placar</h2>
       <div class="score-box">
         <div class="x-section description">
-          <img src=".\images\hello-kitty-icon.png" alt="" class="score-icon">
-          <span id="x-scoreboard">Hello Kitty</span>: <span id="scoreboard-1">0</span>
+          <img src=".\images\hello-kitty-icon.png" alt="" class="score-icon" />
+          <span id="x-scoreboard">Hello Kitty</span>:
+          <span id="scoreboard-1">0</span>
         </div>
         <div class="o-section description">
-          <img src=".\images\my-melody-icon.png" alt="" class="score-icon">
-          <span id="o-scoreboard">My Melody</span>: <span id="scoreboard-2">0</span>   
+          <img src=".\images\my-melody-icon.png" alt="" class="score-icon" />
+          <span id="o-scoreboard">My Melody</span>:
+          <span id="scoreboard-2">0</span>
         </div>
       </div>
     </main>
 
     <div id="message" class="hide">
       <p></p>
-      <img src="" alt="" id="message-icon">
+      <img src="" alt="" id="message-icon" />
     </div>
 
     <script src="script.js"></script>
