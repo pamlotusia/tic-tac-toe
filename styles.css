@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Baloo 2', cursive;
   letter-spacing: 3px;
+  overflow: hidden;
 }
 
 body {
