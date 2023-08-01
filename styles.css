@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  font-weight: bold;
+  height: 3px;
+  width: 390px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.player img {
+  width: 50px;
+}
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.board button {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+/*isolando o button para o winner ser mais forte*/
+button {
+  background-color: white;
+}
+
+.winner {
+  background-color: #f6bbc4;
+  border-color: #f62e70;
+  color: #f62e70;
+}
+
+.score-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 100px;
+}
+.description > :first-child {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.description span {
+  font-size: 20px;
+}
+
+.score-icon {
+  width: 60px;
+  height: 65px;
+}
+
+#message {
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  background-color: #f46c8c;
+  /* background-color: #ed164f; */
+  text-align: center;
+}
+
+#message p {
+color: white;
+text-transform: uppercase;
+margin: 15px 0 ;
+}
+
+#message img{
+  width: 150px;
+  height: 140px;
+}
+.hide{
+  display: none;
+}
