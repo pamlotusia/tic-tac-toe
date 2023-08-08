@@ -36,10 +36,14 @@ init()
 
 function newMove(e) {
   const index = e.target.getAttribute('data-i')
+  //insere o player no botão do board
   e.target.innerHTML = player
+  //remove click, não deixando selecionar o mesmo botão mais de uma vez por partida
   e.target.removeEventListener('click', newMove)
+  //preenche variavel com o valor da posição que foi selecionada
   selected[index] = player
 
+  //verifica se já alguma coordenada de vitoria já aconteceu
   setTimeout(() => {
     check()
   }, [100])
@@ -59,6 +63,7 @@ function newMove(e) {
 function check() {
   let playerLastMove = player === 'X' ? 'O' : 'X'
 
+  //pega o array selected e verifica seus valores para encontrar uma coordenada vencedora
   const items = selected
     .map((item, i) => [item, i])
     .filter(item => item[0] === playerLastMove)
